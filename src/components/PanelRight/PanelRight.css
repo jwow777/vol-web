@@ -1,0 +1,4 @@
+.panel-right {
+  width: var(--width-panel-right);
+  height: 100vh;
+}

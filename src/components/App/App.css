@@ -1,0 +1,6 @@
+:root {
+  --width-navbar: 75px;
+  --width-panel-left: 275px;
+  --width-panel-right: 320px;
+  --width-messages: calc(100% - var(--width-navbar) - var(--width-panel-left) - var(--width-panel-right));
+}

@@ -1,0 +1,5 @@
+.panel-left {
+  width: var(--width-panel-left);
+  height: 100vh;
+  border-right: 1px solid rgba(89, 99, 125, 0.33);
+}

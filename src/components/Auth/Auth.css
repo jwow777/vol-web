@@ -1,0 +1,257 @@
+
+
+.auth {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth__container {
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  max-width: 1440px;
+  max-height: 1024px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 30px;
+  box-sizing: border-box;
+  border: 1px solid #eee;
+  overflow: hidden;
+}
+
+.auth__block {
+
+}
+
+.auth__block_left {
+  box-sizing: border-box;
+  padding: 60px 45px;
+}
+
+.auth__block_right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth__navigation {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-gap: 45px;
+}
+
+.auth__navigation-link {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 1.35;
+  color: #B4B4B4;
+}
+
+.auth__navigation-link_active {
+  position: relative;
+  color: #406AE0;
+}
+
+.auth__navigation-link_active::after {
+  content: '';
+  display: block;
+  background-color: #406AE0;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  top: 43px;
+  left: 0;
+  border-radius: 100px;
+}
+
+.auth__title {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 1.3;
+  color: #494949;
+  margin: 50px 0 10px;
+}
+
+.auth__subtitle {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.3;
+  color: #686868;
+  margin: 0;
+}
+
+.auth__form {
+  display: grid;
+  grid-gap: 16px;
+}
+
+.auth__form_login {
+  margin-top: 204px;
+}
+
+.auth__form_register {
+  margin-top: 28px;
+}
+
+.auth__form-input-block {
+  display: grid;
+  grid-gap: 16px;
+}
+
+.auth__form-input-label {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #494949;  
+}
+
+.auth__form-input {
+  background-color: #FDFDFD;
+  height: 66px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15), 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  padding: 0 27px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.auth__form-input_workspace:last-child {
+  opacity: .5;
+}
+
+/* Убирание стрелок в input[type=number] */
+/* Chrome, Safari, Edge, Opera */
+.auth__form-input::-webkit-outer-spin-button,
+.auth__form-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+.auth__form-input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.auth__form-input-error {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #E13131;
+}
+
+.auth__form-submit {
+  background-color: #406AE0;
+  height: 66px;
+  width: fit-content;
+  box-shadow: 4px 4px 4px rgba(64, 106, 224, 0.24), 0px 4px 10px rgba(64, 106, 224, 0.24);
+  border-radius: 5px;  
+  padding: 0 25px;
+
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.35;
+  color: #FFFFFF;  
+}
+
+.auth__form-submit_workspace {
+  margin-top: auto;
+}
+
+.auth__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.auth__logo-block {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.auth__logo-image {
+  display: block;
+  width: 175px;
+  height: 72px;
+  object-fit: cover;
+}
+
+.auth__logo-title {
+  font-family: 'Yantramanav', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 92px;
+  line-height: 1.3;
+  color: #fff;
+  margin: 0;
+}
+
+.auth__logo-subtitle {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 1.4;
+  color: #fff;
+  margin: 0;
+  z-index: 1;
+}
+
+.auth__form-input-phone.react-tel-input .special-label {
+  display: none;
+}
+
+.auth__form-input-phone.react-tel-input .form-control {
+  background: #fff;
+  border: none;
+  border-radius: 7px;
+  width: 100%;
+  padding: 18.5px 14px 18.5px 80px;
+  transition: box-shadow ease .25s,border-color ease .25s;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15), 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #303030;
+}
+
+.auth__form-input-phone.react-tel-input .form-control:focus {
+  border-color: transparent;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15), 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.auth__form-input-phone.react-tel-input .selected-flag {
+  width: 80px;
+  padding: 0 0 0 24px;
+  border-radius: 7px 0 0 7px;
+}
